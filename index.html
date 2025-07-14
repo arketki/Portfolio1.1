@@ -6,36 +6,104 @@
   <title>Ketki | Architect & Designer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-    }
-    h1 {
-      font-size: 2rem;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f5;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-    a {
-      color: #0077cc;
+
+    header {
+      background: #222;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    main {
+      flex: 1;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background: #555;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: #8ecae6;
       text-decoration: none;
     }
-    .social {
-      margin: 1rem 0;
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      a.button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Ketki</h1>
-  <p><strong>Architect & Cross-Domain Designer</strong></p>
-  
-  <div class="social">
+
+  <header>
+    <h1>Ketki</h1>
+    <p>Architect & Cross-Domain Designer</p>
+  </header>
+
+  <main>
+    <p><a class="button" href="Quick Folio_compressed.pdf" target="_blank">📄 View Portfolio (PDF)</a></p>
+  </main>
+
+  <footer>
     <p>📧 <a href="mailto:ketki.design@email.com">ketki.design@email.com</a></p>
     <p>🔗 <a href="https://linkedin.com/in/ketki-design" target="_blank">LinkedIn</a></p>
     <p>🎨 <a href="https://behance.net/ketkidesign" target="_blank">Behance</a></p>
-    <p>💼 <a href="https://upwork.com/freelancers/~ketki" target="_blank">Upwork Freelancer Profile</a></p>
-  </div>
+    <p>💼 <a href="https://upwork.com/freelancers/~ketki" target="_blank">Upwork Profile</a></p>
+  </footer>
 
-  <p>Looking forward to connecting and exploring collaborative opportunities!</p>
 </body>
 </html>
+
