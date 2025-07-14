@@ -5,32 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ketki | Architect & Designer</title>
   <style>
+    :root {
+      --bg: #fdf6ee;
+      --text: #3e2f2f;
+      --accent: #7b5e57;
+      --button: #b08968;
+      --button-hover: #a97155;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      font-family: 'Georgia', serif;
+      background: var(--bg);
+      color: var(--text);
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
 
     header {
-      background: #222;
+      background: var(--accent);
       color: white;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
 
     header p {
       margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 1.3rem;
+      font-style: italic;
     }
 
     main {
@@ -39,39 +47,39 @@
       padding: 3rem 1rem;
     }
 
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      max-width: 300px;
+      margin: auto;
+    }
+
     a.button {
       display: inline-block;
-      background: #333;
+      background: var(--button);
       color: white;
       padding: 1rem 2rem;
       text-decoration: none;
       font-size: 1.1rem;
-      border-radius: 5px;
+      border-radius: 6px;
       transition: background 0.3s;
     }
 
     a.button:hover {
-      background: #555;
+      background: var(--button-hover);
     }
 
     footer {
-      background: #111;
-      color: #ccc;
+      background: var(--accent);
+      color: white;
       padding: 2rem 1rem;
       text-align: center;
+      font-size: 1rem;
     }
 
     footer p {
-      margin: 0.5rem 0;
-    }
-
-    footer a {
-      color: #8ecae6;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+      margin: 0.4rem 0;
     }
 
     @media (max-width: 600px) {
@@ -94,16 +102,18 @@
   </header>
 
   <main>
-    <p><a class="button" href="Quick Folio_compressed.pdf" target="_blank">📄 View Portfolio (PDF)</a></p>
+    <div class="button-group">
+      <a class="button" href="Quick Folio_compressed.pdf" target="_blank">📄 View Portfolio 1</a>
+      <a class="button" href="port2.pdf" target="_blank">📄 View Portfolio 2</a>
+      <a class="button" href="Ketki Nalawade Resume.pdf" target="_blank">📄 View Resume</a>
+    </div>
   </main>
 
   <footer>
-    <p>📧 <a href="mailto:ketki.design@email.com">ketki.design@email.com</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/ketki-design" target="_blank">LinkedIn</a></p>
-    <p>🎨 <a href="https://behance.net/ketkidesign" target="_blank">Behance</a></p>
-    <p>💼 <a href="https://upwork.com/freelancers/~ketki" target="_blank">Upwork Profile</a></p>
+    <p>📞 9820794183</p>
+    <p>📧 <a style="color: white;" href="mailto:ketkinalawade@gmail.com">ketkinalawade@gmail.com</a></p>
+    <p>🔗 <a style="color: white;" href="https://www.linkedin.com/in/ketki11" target="_blank">linkedin.com/in/ketki11</a></p>
   </footer>
 
 </body>
 </html>
-
